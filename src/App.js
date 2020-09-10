@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
-import ProfileCard from './ProfileCard.js'
+import ProfileCard from './ProfileCard.js';
+import Projects from './Projects.js';
 import './App.css';
 
 function App() {
@@ -9,7 +10,6 @@ function App() {
       <nav className="navbar">
         <div className="navbar-menu">
           <div className="navbar-start">
-            Ryan Thornton
           </div>
           <div className="navbar-end">
             <div className="navbar-item">
@@ -25,16 +25,18 @@ function App() {
         </div>
       </nav>
         <div className="container">
-          <div className="columns">
-            <div className="column">
-              <br/>
-              <ProfileCard/>
-            </div>
-            <div className="column">
-
-            </div>
+          <div>
+            <br/>
+            <ProfileCard/>
+          </div>
+          <div className="pt-2">
+            <Projects/>
           </div>
         </div>
+        <footer id="footer" className="footer">
+          Website by <a href="https://linkedin.com/in/rythornton" target="_blank">Ryan Thornton</a>
+
+        </footer>
     </div>
   );
 }

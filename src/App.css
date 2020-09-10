@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  min-height: 100vh
 }
 
 .App-logo {
@@ -32,9 +33,33 @@ a {
   color: gray;
 }
 
+#search-form{
+  display: inline-block
+
+}
+
+#profile-card-container{
+  width: 53%;
+  display: inline-block;
+  justify-content: center
+}
+
+.Buttons-group{
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 #avatar{
   border-radius: 50px;
-  width: 20%
+  width: 20%;
+}
+
+#footer{
+  position: fixed;
+  width: 100vw;
+  bottom: 0px
 }
 
 @keyframes App-logo-spin {

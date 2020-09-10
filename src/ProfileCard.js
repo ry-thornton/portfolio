@@ -22,7 +22,7 @@ function ProfileCard(props){
 
     return (
         <>
-            <div className="box">
+            <div id="profile-card-container">
                 <img id="avatar" src="profilepicture.jpg"/>
                 <br/>
                 <h1 className="title">Ryan Thornton</h1>
@@ -31,7 +31,7 @@ function ProfileCard(props){
                 <a href="https://rythornton.com" target="_blank"> photographer</a> 📷
                 <br/>
                 <br/>
-                <div className="buttons">
+                <div className="buttons Buttons-group">
                     {skills.map(skill => <span className="tag button">{skill}</span>)}
                 </div>
             </div>
