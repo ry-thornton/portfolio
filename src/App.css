@@ -40,6 +40,7 @@ a {
 
 #profile-card-container{
   width: 53%;
+  padding-top: 7%;
   display: inline-block;
   justify-content: center
 }
@@ -53,6 +54,7 @@ a {
 
 #avatar{
   border-radius: 50px;
+  max-width: 100px;
   width: 20%;
 }
 
@@ -67,6 +69,11 @@ a {
   min-height: 100px;
   margin: auto;
   margin-top: 0
+}
+
+.Project-card:hover{
+  cursor: pointer;
+  
 }
 
 #project-container{
