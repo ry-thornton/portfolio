@@ -15,14 +15,14 @@ class Projects extends React.Component{
     }
 
     componentDidMount(){
-        this.setState({projects: ["Project 1", "Project 2", "Project 3"]})
+        this.setState({projects: ["CoffeeHood", "NBApp", "Trivia-CLI"]})
     }
 
     renderProjects = () => {
         //based on keyword filter projects in state that include the
         //keyword and render them to the screen in Project Cards
         let filteredProjects = this.state.projects.filter(project => project.includes(this.state.keyword))
-        return filteredProjects.map(project => <div>{project}</div>)
+        return filteredProjects.map(project => <span className="box Project-card">{project}</span>)
     }
 
     render(){
@@ -30,7 +30,9 @@ class Projects extends React.Component{
             <>
             {/* Container for project search bar/filter and all projects (cards)*/}
             <SearchForm changeHandler={this.changeHandler} keyword={this.state.keyword}/>
-            <div>
+            <br/>
+            Projects
+            <div id="project-container">
                 {/* Based on keyword only show the projects that the user is searching for */}
                 {this.renderProjects()}
                 

@@ -32,11 +32,13 @@ function App() {
           <div className="pt-2">
             <Projects/>
           </div>
+          <br/>
+          <br/>
         </div>
-        <footer id="footer" className="footer">
+        {/* <footer id="footer" className="footer">
           Website by <a href="https://linkedin.com/in/rythornton" target="_blank">Ryan Thornton</a>
 
-        </footer>
+        </footer> */}
     </div>
   );
 }
