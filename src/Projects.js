@@ -1,4 +1,5 @@
 import React from 'react';
+import ProjectContainer from './ProjectContainer.js'
 import SearchForm from './SearchForm.js'
 
 class Projects extends React.Component{
@@ -22,7 +23,7 @@ class Projects extends React.Component{
         //based on keyword filter projects in state that include the
         //keyword and render them to the screen in Project Cards
         let filteredProjects = this.state.projects.filter(project => project.includes(this.state.keyword))
-        return filteredProjects.map(project => <span className="box Project-card"><video width="100%" controls><source src={`${project}.mov`}></source></video><br/>{project}</span>)
+        return filteredProjects.map(project => <ProjectContainer project={project}/>)
     }
 
     render(){
