@@ -3,7 +3,8 @@ import logo from './logo.svg';
 import ProfileCard from './ProfileCard.js';
 import NavBar from './NavBar.js';
 import Projects from './Projects.js';
-import Resume from './Resume.js'
+import Resume from './Resume.js';
+import About from './About.js';
 import './App.css';
 
 class App extends React.Component{
@@ -19,7 +20,7 @@ class App extends React.Component{
       case "resume":
         return (<Resume/>);
       case "about":
-        return (<div>About</div>);
+        return (<About/>);
       default:
         return <ProfileCard/>
     }

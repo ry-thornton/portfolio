@@ -16,7 +16,7 @@ class Projects extends React.Component{
     }
 
     componentDidMount(){
-        this.setState({projects: ["CoffeeHood", "NBApp", "Trivia-CLI"]})
+        this.setState({projects: ["GOffee", "CoffeeHood", "NBApp"]})
     }
 
     renderProjects = () => {
@@ -31,8 +31,6 @@ class Projects extends React.Component{
             <>
             {/* Container for project search bar/filter and all projects (cards)*/}
             {/* <SearchForm changeHandler={this.changeHandler} keyword={this.state.keyword}/> */}
-            <br/>
-            Projects
             <div id="project-container">
                 {/* Based on keyword only show the projects that the user is searching for */}
                 {this.renderProjects()}

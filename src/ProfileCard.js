@@ -34,6 +34,11 @@ function ProfileCard(props){
                 <div className="buttons Buttons-group">
                     {skills.map(skill => <span className="tag button">{skill}</span>)}
                 </div>
+                
+                <div className="buttons Button-group">
+                    <a href="https://linkedin.com/in/rythornton" target="_blank"><button id="LinkedIn-button" className="button">LinkedIn</button></a>
+                    <a href="https://github.com/ry-thornton" target="_blank"><button id="Github-button" className="button">GitHub</button></a>
+                </div>
             </div>
         </>
     )
